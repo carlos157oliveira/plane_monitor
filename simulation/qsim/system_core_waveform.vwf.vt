@@ -1,0 +1,581 @@
+// Copyright (C) 2020  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "10/02/2024 14:24:26"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          system_core
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module system_core_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg alt_neg;
+reg [1:0] ctrl;
+reg humid_neg;
+reg [7:0] in_alt;
+reg [7:0] in_humid;
+reg [7:0] in_temp;
+reg [15:0] in_timer;
+reg [1:0] sel;
+reg temp_neg;
+reg timer_neg;
+// wires                                               
+wire [3:0] led_display;
+wire [15:0] out_data;
+wire out_neg;
+
+// assign statements (if any)                          
+system_core i1 (
+// port map - connection between master ports and signals/registers   
+	.alt_neg(alt_neg),
+	.ctrl(ctrl),
+	.humid_neg(humid_neg),
+	.in_alt(in_alt),
+	.in_humid(in_humid),
+	.in_temp(in_temp),
+	.in_timer(in_timer),
+	.led_display(led_display),
+	.out_data(out_data),
+	.out_neg(out_neg),
+	.sel(sel),
+	.temp_neg(temp_neg),
+	.timer_neg(timer_neg)
+);
+initial 
+begin 
+#1000000 $stop;
+end 
+
+// humid_neg
+initial
+begin
+	humid_neg = 1'b0;
+end 
+
+// alt_neg
+initial
+begin
+	alt_neg = 1'b0;
+end 
+
+// timer_neg
+initial
+begin
+	timer_neg = 1'b0;
+end 
+
+// temp_neg
+initial
+begin
+	temp_neg = 1'b0;
+	temp_neg = #200000 1'b1;
+	temp_neg = #100000 1'b0;
+	temp_neg = #250000 1'b1;
+	temp_neg = #50000 1'b0;
+end 
+// sel[ 1 ]
+initial
+begin
+	sel[1] = 1'b0;
+	sel[1] = #550000 1'b1;
+	sel[1] = #100000 1'b0;
+	sel[1] = #200000 1'b1;
+	sel[1] = #100000 1'b0;
+end 
+// sel[ 0 ]
+initial
+begin
+	sel[0] = 1'b0;
+	sel[0] = #100000 1'b1;
+	sel[0] = #200000 1'b0;
+	sel[0] = #250000 1'b1;
+	sel[0] = #100000 1'b0;
+end 
+
+// ctrl[1]
+initial
+begin
+	ctrl[1] = 1'b0;
+	ctrl[1] = #200000 1'b1;
+	ctrl[1] = #200000 1'b0;
+	ctrl[1] = #100000 1'b1;
+	ctrl[1] = #300000 1'b0;
+	ctrl[1] = #100000 1'b1;
+end 
+
+// ctrl[0]
+initial
+begin
+	ctrl[0] = 1'b1;
+	ctrl[0] = #100000 1'b0;
+	ctrl[0] = #100000 1'b1;
+	ctrl[0] = #100000 1'b0;
+	ctrl[0] = #100000 1'b1;
+	ctrl[0] = #100000 1'b0;
+	ctrl[0] = #100000 1'b1;
+	ctrl[0] = #100000 1'b0;
+	ctrl[0] = #200000 1'b1;
+end 
+// in_humid[ 7 ]
+initial
+begin
+	in_humid[7] = 1'b1;
+	in_humid[7] = #100000 1'b0;
+	in_humid[7] = #200000 1'b1;
+	in_humid[7] = #50000 1'b0;
+	in_humid[7] = #50000 1'b1;
+	in_humid[7] = #200000 1'b0;
+	in_humid[7] = #50000 1'b1;
+	in_humid[7] = #50000 1'b0;
+	in_humid[7] = #150000 1'b1;
+	in_humid[7] = #100000 1'b0;
+end 
+// in_humid[ 6 ]
+initial
+begin
+	in_humid[6] = 1'b0;
+	in_humid[6] = #100000 1'b1;
+	in_humid[6] = #150000 1'b0;
+	in_humid[6] = #50000 1'b1;
+	in_humid[6] = #150000 1'b0;
+	in_humid[6] = #50000 1'b1;
+	in_humid[6] = #50000 1'b0;
+	in_humid[6] = #400000 1'b1;
+end 
+// in_humid[ 5 ]
+initial
+begin
+	in_humid[5] = 1'b0;
+	in_humid[5] = #50000 1'b1;
+	in_humid[5] = #50000 1'b0;
+	in_humid[5] = #100000 1'b1;
+	in_humid[5] = #50000 1'b0;
+	in_humid[5] = #200000 1'b1;
+	in_humid[5] = #150000 1'b0;
+	in_humid[5] = #150000 1'b1;
+	in_humid[5] = #150000 1'b0;
+end 
+// in_humid[ 4 ]
+initial
+begin
+	in_humid[4] = 1'b1;
+	in_humid[4] = #100000 1'b0;
+	in_humid[4] = #100000 1'b1;
+	in_humid[4] = #50000 1'b0;
+	in_humid[4] = #100000 1'b1;
+	in_humid[4] = #50000 1'b0;
+	in_humid[4] = #50000 1'b1;
+	in_humid[4] = #100000 1'b0;
+	in_humid[4] = #200000 1'b1;
+	in_humid[4] = #50000 1'b0;
+	in_humid[4] = #150000 1'b1;
+end 
+// in_humid[ 3 ]
+initial
+begin
+	in_humid[3] = 1'b0;
+	in_humid[3] = #150000 1'b1;
+	in_humid[3] = #50000 1'b0;
+	in_humid[3] = #50000 1'b1;
+	in_humid[3] = #200000 1'b0;
+	in_humid[3] = #150000 1'b1;
+	in_humid[3] = #150000 1'b0;
+	in_humid[3] = #150000 1'b1;
+	in_humid[3] = #50000 1'b0;
+end 
+// in_humid[ 2 ]
+initial
+begin
+	in_humid[2] = 1'b0;
+	in_humid[2] = #50000 1'b1;
+	in_humid[2] = #200000 1'b0;
+	in_humid[2] = #50000 1'b1;
+	in_humid[2] = #350000 1'b0;
+	in_humid[2] = #50000 1'b1;
+end 
+// in_humid[ 1 ]
+initial
+begin
+	in_humid[1] = 1'b0;
+	in_humid[1] = #50000 1'b1;
+	in_humid[1] = #100000 1'b0;
+	in_humid[1] = #50000 1'b1;
+	in_humid[1] = #50000 1'b0;
+	in_humid[1] = #50000 1'b1;
+	in_humid[1] = #200000 1'b0;
+	in_humid[1] = #100000 1'b1;
+	in_humid[1] = #50000 1'b0;
+	in_humid[1] = #50000 1'b1;
+	in_humid[1] = #50000 1'b0;
+	in_humid[1] = #50000 1'b1;
+	in_humid[1] = #150000 1'b0;
+end 
+// in_humid[ 0 ]
+initial
+begin
+	in_humid[0] = 1'b0;
+	in_humid[0] = #200000 1'b1;
+	in_humid[0] = #100000 1'b0;
+	in_humid[0] = #50000 1'b1;
+	in_humid[0] = #100000 1'b0;
+	in_humid[0] = #150000 1'b1;
+	in_humid[0] = #50000 1'b0;
+	in_humid[0] = #50000 1'b1;
+	in_humid[0] = #50000 1'b0;
+	in_humid[0] = #50000 1'b1;
+	in_humid[0] = #50000 1'b0;
+end 
+// in_alt[ 7 ]
+initial
+begin
+	in_alt[7] = 1'b0;
+	in_alt[7] = #100000 1'b1;
+	in_alt[7] = #50000 1'b0;
+	in_alt[7] = #100000 1'b1;
+	in_alt[7] = #100000 1'b0;
+	in_alt[7] = #50000 1'b1;
+	in_alt[7] = #50000 1'b0;
+	in_alt[7] = #100000 1'b1;
+	in_alt[7] = #100000 1'b0;
+	in_alt[7] = #50000 1'b1;
+	in_alt[7] = #50000 1'b0;
+	in_alt[7] = #50000 1'b1;
+end 
+// in_alt[ 6 ]
+initial
+begin
+	in_alt[6] = 1'b1;
+	in_alt[6] = #100000 1'b0;
+	in_alt[6] = #100000 1'b1;
+	in_alt[6] = #50000 1'b0;
+	in_alt[6] = #150000 1'b1;
+	in_alt[6] = #100000 1'b0;
+	in_alt[6] = #50000 1'b1;
+	in_alt[6] = #50000 1'b0;
+	in_alt[6] = #150000 1'b1;
+	in_alt[6] = #50000 1'b0;
+	in_alt[6] = #50000 1'b1;
+	in_alt[6] = #50000 1'b0;
+end 
+// in_alt[ 5 ]
+initial
+begin
+	in_alt[5] = 1'b1;
+	in_alt[5] = #100000 1'b0;
+	in_alt[5] = #100000 1'b1;
+	in_alt[5] = #250000 1'b0;
+	in_alt[5] = #50000 1'b1;
+	in_alt[5] = #100000 1'b0;
+	in_alt[5] = #50000 1'b1;
+	in_alt[5] = #50000 1'b0;
+	in_alt[5] = #50000 1'b1;
+	in_alt[5] = #150000 1'b0;
+	in_alt[5] = #50000 1'b1;
+end 
+// in_alt[ 4 ]
+initial
+begin
+	in_alt[4] = 1'b0;
+	in_alt[4] = #100000 1'b1;
+	in_alt[4] = #300000 1'b0;
+	in_alt[4] = #100000 1'b1;
+	in_alt[4] = #50000 1'b0;
+	in_alt[4] = #50000 1'b1;
+	in_alt[4] = #150000 1'b0;
+end 
+// in_alt[ 3 ]
+initial
+begin
+	in_alt[3] = 1'b0;
+	in_alt[3] = #250000 1'b1;
+	in_alt[3] = #400000 1'b0;
+	in_alt[3] = #50000 1'b1;
+	in_alt[3] = #50000 1'b0;
+	in_alt[3] = #100000 1'b1;
+	in_alt[3] = #100000 1'b0;
+end 
+// in_alt[ 2 ]
+initial
+begin
+	in_alt[2] = 1'b0;
+	in_alt[2] = #200000 1'b1;
+	in_alt[2] = #50000 1'b0;
+	in_alt[2] = #100000 1'b1;
+	in_alt[2] = #50000 1'b0;
+	in_alt[2] = #100000 1'b1;
+	in_alt[2] = #100000 1'b0;
+	in_alt[2] = #50000 1'b1;
+	in_alt[2] = #200000 1'b0;
+	in_alt[2] = #100000 1'b1;
+end 
+// in_alt[ 1 ]
+initial
+begin
+	in_alt[1] = 1'b1;
+	in_alt[1] = #150000 1'b0;
+	in_alt[1] = #100000 1'b1;
+	in_alt[1] = #350000 1'b0;
+	in_alt[1] = #50000 1'b1;
+	in_alt[1] = #200000 1'b0;
+end 
+// in_alt[ 0 ]
+initial
+begin
+	in_alt[0] = 1'b0;
+	in_alt[0] = #50000 1'b1;
+	in_alt[0] = #150000 1'b0;
+	in_alt[0] = #100000 1'b1;
+	in_alt[0] = #50000 1'b0;
+	in_alt[0] = #50000 1'b1;
+	in_alt[0] = #50000 1'b0;
+	in_alt[0] = #50000 1'b1;
+	in_alt[0] = #150000 1'b0;
+	in_alt[0] = #50000 1'b1;
+	in_alt[0] = #100000 1'b0;
+	in_alt[0] = #100000 1'b1;
+end 
+// in_temp[ 7 ]
+initial
+begin
+	in_temp[7] = 1'b1;
+	in_temp[7] = #50000 1'b0;
+	in_temp[7] = #200000 1'b1;
+	in_temp[7] = #50000 1'b0;
+	in_temp[7] = #50000 1'b1;
+	in_temp[7] = #50000 1'b0;
+	in_temp[7] = #50000 1'b1;
+	in_temp[7] = #100000 1'b0;
+	in_temp[7] = #50000 1'b1;
+	in_temp[7] = #100000 1'b0;
+	in_temp[7] = #50000 1'b1;
+	in_temp[7] = #100000 1'b0;
+	in_temp[7] = #50000 1'b1;
+	in_temp[7] = #50000 1'b0;
+end 
+// in_temp[ 6 ]
+initial
+begin
+	in_temp[6] = 1'b1;
+	in_temp[6] = #100000 1'b0;
+	in_temp[6] = #50000 1'b1;
+	in_temp[6] = #50000 1'b0;
+	in_temp[6] = #50000 1'b1;
+	in_temp[6] = #150000 1'b0;
+	in_temp[6] = #50000 1'b1;
+	in_temp[6] = #50000 1'b0;
+	in_temp[6] = #50000 1'b1;
+	in_temp[6] = #100000 1'b0;
+	in_temp[6] = #100000 1'b1;
+	in_temp[6] = #50000 1'b0;
+end 
+// in_temp[ 5 ]
+initial
+begin
+	in_temp[5] = 1'b1;
+	in_temp[5] = #200000 1'b0;
+	in_temp[5] = #100000 1'b1;
+	in_temp[5] = #100000 1'b0;
+	in_temp[5] = #50000 1'b1;
+	in_temp[5] = #100000 1'b0;
+	in_temp[5] = #150000 1'b1;
+	in_temp[5] = #50000 1'b0;
+	in_temp[5] = #50000 1'b1;
+end 
+// in_temp[ 4 ]
+initial
+begin
+	in_temp[4] = 1'b1;
+	in_temp[4] = #150000 1'b0;
+	in_temp[4] = #200000 1'b1;
+	in_temp[4] = #50000 1'b0;
+	in_temp[4] = #100000 1'b1;
+	in_temp[4] = #50000 1'b0;
+	in_temp[4] = #50000 1'b1;
+	in_temp[4] = #150000 1'b0;
+	in_temp[4] = #50000 1'b1;
+	in_temp[4] = #100000 1'b0;
+end 
+// in_temp[ 3 ]
+initial
+begin
+	in_temp[3] = 1'b1;
+	in_temp[3] = #50000 1'b0;
+	in_temp[3] = #100000 1'b1;
+	in_temp[3] = #50000 1'b0;
+	in_temp[3] = #50000 1'b1;
+	in_temp[3] = #100000 1'b0;
+	in_temp[3] = #50000 1'b1;
+	in_temp[3] = #50000 1'b0;
+	in_temp[3] = #150000 1'b1;
+	in_temp[3] = #50000 1'b0;
+	in_temp[3] = #50000 1'b1;
+	in_temp[3] = #50000 1'b0;
+	in_temp[3] = #200000 1'b1;
+end 
+// in_temp[ 2 ]
+initial
+begin
+	in_temp[2] = 1'b1;
+	in_temp[2] = #300000 1'b0;
+	in_temp[2] = #100000 1'b1;
+	in_temp[2] = #50000 1'b0;
+	in_temp[2] = #200000 1'b1;
+	in_temp[2] = #100000 1'b0;
+end 
+// in_temp[ 1 ]
+initial
+begin
+	in_temp[1] = 1'b0;
+	in_temp[1] = #50000 1'b1;
+	in_temp[1] = #250000 1'b0;
+	in_temp[1] = #150000 1'b1;
+	in_temp[1] = #100000 1'b0;
+	in_temp[1] = #50000 1'b1;
+	in_temp[1] = #50000 1'b0;
+	in_temp[1] = #300000 1'b1;
+end 
+// in_temp[ 0 ]
+initial
+begin
+	in_temp[0] = 1'b1;
+	in_temp[0] = #50000 1'b0;
+	in_temp[0] = #50000 1'b1;
+	in_temp[0] = #50000 1'b0;
+	in_temp[0] = #50000 1'b1;
+	in_temp[0] = #100000 1'b0;
+	in_temp[0] = #50000 1'b1;
+	in_temp[0] = #150000 1'b0;
+	in_temp[0] = #50000 1'b1;
+	in_temp[0] = #100000 1'b0;
+	in_temp[0] = #100000 1'b1;
+	in_temp[0] = #200000 1'b0;
+end 
+// in_timer[ 15 ]
+initial
+begin
+	in_timer[15] = 1'b0;
+end 
+// in_timer[ 14 ]
+initial
+begin
+	in_timer[14] = 1'b0;
+end 
+// in_timer[ 13 ]
+initial
+begin
+	in_timer[13] = 1'b0;
+end 
+// in_timer[ 12 ]
+initial
+begin
+	in_timer[12] = 1'b0;
+end 
+// in_timer[ 11 ]
+initial
+begin
+	in_timer[11] = 1'b0;
+end 
+// in_timer[ 10 ]
+initial
+begin
+	in_timer[10] = 1'b0;
+end 
+// in_timer[ 9 ]
+initial
+begin
+	in_timer[9] = 1'b0;
+end 
+// in_timer[ 8 ]
+initial
+begin
+	in_timer[8] = 1'b0;
+end 
+// in_timer[ 7 ]
+initial
+begin
+	in_timer[7] = 1'b0;
+end 
+// in_timer[ 6 ]
+initial
+begin
+	in_timer[6] = 1'b0;
+	in_timer[6] = #640000 1'b1;
+end 
+// in_timer[ 5 ]
+initial
+begin
+	in_timer[5] = 1'b0;
+	in_timer[5] = #320000 1'b1;
+	in_timer[5] = #320000 1'b0;
+	in_timer[5] = #320000 1'b1;
+end 
+// in_timer[ 4 ]
+initial
+begin
+	repeat(3)
+	begin
+		in_timer[4] = 1'b0;
+		in_timer[4] = #160000 1'b1;
+		# 160000;
+	end
+	in_timer[4] = 1'b0;
+end 
+// in_timer[ 3 ]
+initial
+begin
+	repeat(6)
+	begin
+		in_timer[3] = 1'b0;
+		in_timer[3] = #80000 1'b1;
+		# 80000;
+	end
+	in_timer[3] = 1'b0;
+end 
+// in_timer[ 2 ]
+initial
+begin
+	repeat(12)
+	begin
+		in_timer[2] = 1'b0;
+		in_timer[2] = #40000 1'b1;
+		# 40000;
+	end
+	in_timer[2] = 1'b0;
+end 
+// in_timer[ 1 ]
+always
+begin
+	in_timer[1] = 1'b0;
+	in_timer[1] = #20000 1'b1;
+	#20000;
+end 
+// in_timer[ 0 ]
+always
+begin
+	in_timer[0] = 1'b0;
+	in_timer[0] = #10000 1'b1;
+	#10000;
+end 
+endmodule
+

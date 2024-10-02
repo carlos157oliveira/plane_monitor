@@ -1,0 +1,89 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clock'
+Slack : -103.125
+TNS   : -1787.103
+
+Type  : Slow 1200mV 85C Model Setup 'cronometro:inst2|clk1s'
+Slack : -45.848
+TNS   : -471.979
+
+Type  : Slow 1200mV 85C Model Hold 'cronometro:inst2|clk1s'
+Slack : 0.386
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clock'
+Slack : 0.401
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -153.345
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'SW13'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'cronometro:inst2|clk1s'
+Slack : -1.285
+TNS   : -23.130
+
+Type  : Slow 1200mV 0C Model Setup 'clock'
+Slack : -93.177
+TNS   : -1607.217
+
+Type  : Slow 1200mV 0C Model Setup 'cronometro:inst2|clk1s'
+Slack : -41.439
+TNS   : -426.439
+
+Type  : Slow 1200mV 0C Model Hold 'cronometro:inst2|clk1s'
+Slack : 0.339
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clock'
+Slack : 0.353
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -153.345
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'SW13'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'cronometro:inst2|clk1s'
+Slack : -1.285
+TNS   : -23.130
+
+Type  : Fast 1200mV 0C Model Setup 'clock'
+Slack : -49.982
+TNS   : -830.189
+
+Type  : Fast 1200mV 0C Model Setup 'cronometro:inst2|clk1s'
+Slack : -22.609
+TNS   : -229.302
+
+Type  : Fast 1200mV 0C Model Hold 'cronometro:inst2|clk1s'
+Slack : 0.174
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clock'
+Slack : 0.180
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -127.334
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'SW13'
+Slack : -3.000
+TNS   : -4.528
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'cronometro:inst2|clk1s'
+Slack : -1.000
+TNS   : -18.000
+
+------------------------------------------------------------

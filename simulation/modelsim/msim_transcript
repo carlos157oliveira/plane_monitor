@@ -1,0 +1,546 @@
+# do Features_Monitor_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying /home/ceo/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {/home/ceo/Downloads/projeto_final/input_control.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:25:20 on Oct 02,2024
+# vcom -reportprogress 300 -93 -work work /home/ceo/Downloads/projeto_final/input_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity input_control
+# -- Compiling architecture main of input_control
+# End time: 15:25:20 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# 
+# stdin: <EOF>
+vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/altitude_module.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:25:34 on Oct 02,2024
+# vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/altitude_module.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity altitude_module
+# -- Compiling architecture arch_altitude of altitude_module
+# End time: 15:25:34 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/altitude_module_testbench.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:25:34 on Oct 02,2024
+# vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/altitude_module_testbench.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity testbench_altitude
+# -- Compiling architecture main of testbench_altitude
+# -- Loading entity altitude_module
+# End time: 15:25:34 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/button_process.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:25:34 on Oct 02,2024
+# vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/button_process.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity button_process
+# -- Compiling architecture arch_button of button_process
+# End time: 15:25:34 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/cronometro_testbench.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:25:34 on Oct 02,2024
+# vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/cronometro_testbench.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity testbench_cronometro
+# -- Compiling architecture main of testbench_cronometro
+# ** Error: (vcom-11) Could not find work.cronometro.
+# ** Error (suppressible): /home/ceo/Downloads/projeto_final/cronometro_testbench.vhd(55): (vcom-1195) Cannot find expanded name "work.cronometro".
+# ** Error: /home/ceo/Downloads/projeto_final/cronometro_testbench.vhd(55): Unknown expanded name.
+# ** Note: /home/ceo/Downloads/projeto_final/cronometro_testbench.vhd(104): VHDL Compiler exiting
+# End time: 15:25:34 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/display.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:25:34 on Oct 02,2024
+# vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/display.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity display
+# -- Compiling architecture arch_display_test of display
+# End time: 15:25:34 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/input_control.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:25:34 on Oct 02,2024
+# vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/input_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity input_control
+# -- Compiling architecture main of input_control
+# End time: 15:25:34 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/temp_module.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:25:34 on Oct 02,2024
+# vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/temp_module.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity temp_module
+# -- Compiling architecture main of temp_module
+# End time: 15:25:34 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/umidade_module.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:25:34 on Oct 02,2024
+# vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/umidade_module.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity umidade_module
+# -- Compiling architecture umidade_main of umidade_module
+# End time: 15:25:34 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/altitude_module.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:25:35 on Oct 02,2024
+# vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/altitude_module.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity altitude_module
+# -- Compiling architecture arch_altitude of altitude_module
+# End time: 15:25:36 on Oct 02,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/altitude_module_testbench.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:25:36 on Oct 02,2024
+# vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/altitude_module_testbench.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity testbench_altitude
+# -- Compiling architecture main of testbench_altitude
+# -- Loading entity altitude_module
+# End time: 15:25:36 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/button_process.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:25:36 on Oct 02,2024
+# vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/button_process.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity button_process
+# -- Compiling architecture arch_button of button_process
+# End time: 15:25:36 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/cronometro_testbench.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:25:36 on Oct 02,2024
+# vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/cronometro_testbench.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity testbench_cronometro
+# -- Compiling architecture main of testbench_cronometro
+# ** Error: (vcom-11) Could not find work.cronometro.
+# ** Error (suppressible): /home/ceo/Downloads/projeto_final/cronometro_testbench.vhd(55): (vcom-1195) Cannot find expanded name "work.cronometro".
+# ** Error: /home/ceo/Downloads/projeto_final/cronometro_testbench.vhd(55): Unknown expanded name.
+# ** Note: /home/ceo/Downloads/projeto_final/cronometro_testbench.vhd(104): VHDL Compiler exiting
+# End time: 15:25:36 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/display.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:25:36 on Oct 02,2024
+# vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/display.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity display
+# -- Compiling architecture arch_display_test of display
+# End time: 15:25:36 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/input_control.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:25:36 on Oct 02,2024
+# vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/input_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity input_control
+# -- Compiling architecture main of input_control
+# End time: 15:25:36 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/temp_module.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:25:36 on Oct 02,2024
+# vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/temp_module.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity temp_module
+# -- Compiling architecture main of temp_module
+# End time: 15:25:36 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/umidade_module.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:25:36 on Oct 02,2024
+# vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/umidade_module.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity umidade_module
+# -- Compiling architecture umidade_main of umidade_module
+# End time: 15:25:36 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/buttons_test.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:25:39 on Oct 02,2024
+# vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/buttons_test.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity buttons_test
+# -- Compiling architecture main of buttons_test
+# End time: 15:25:39 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/central_alarmes.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:25:39 on Oct 02,2024
+# vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/central_alarmes.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity central_alarmes
+# -- Compiling architecture main of central_alarmes
+# End time: 15:25:39 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/central_alarmes_testbench.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:25:39 on Oct 02,2024
+# vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/central_alarmes_testbench.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testbench_central_alarmes
+# -- Compiling architecture main of testbench_central_alarmes
+# -- Loading entity central_alarmes
+# End time: 15:25:39 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/cronometro.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:25:39 on Oct 02,2024
+# vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/cronometro.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity cronometro
+# -- Compiling architecture main of cronometro
+# End time: 15:25:39 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/main_generated_source.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:25:39 on Oct 02,2024
+# vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/main_generated_source.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity main_generated_source
+# -- Compiling architecture bdf_type of main_generated_source
+# End time: 15:25:39 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/main_testbench.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:25:39 on Oct 02,2024
+# vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/main_testbench.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity main_testbench
+# -- Compiling architecture main of main_testbench
+# -- Loading entity main_generated_source
+# End time: 15:25:39 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/minutes_second_module.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:25:39 on Oct 02,2024
+# vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/minutes_second_module.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity minutes_second_module
+# -- Compiling architecture arch_minutes_second of minutes_second_module
+# End time: 15:25:39 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/system_core.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:25:39 on Oct 02,2024
+# vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/system_core.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity system_core
+# -- Compiling architecture Behavioral of system_core
+# End time: 15:25:40 on Oct 02,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/main_testbench.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:25:48 on Oct 02,2024
+# vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/main_testbench.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity main_testbench
+# -- Compiling architecture main of main_testbench
+# -- Loading entity main_generated_source
+# End time: 15:25:48 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.main_testbench
+# vsim work.main_testbench 
+# Start time: 15:25:59 on Oct 02,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.main_testbench(main)
+# Loading work.main_generated_source(bdf_type)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.system_core(behavioral)
+# Loading ieee.numeric_std(body)
+# Loading work.umidade_module(umidade_main)
+# Loading work.button_process(arch_button)
+# Loading work.display(arch_display_test)
+# ** Fatal: (vsim-3817) Port "flag" of entity "display" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /main_testbench/UUT/b2v_inst13 File: /home/ceo/Downloads/projeto_final/display.vhd Line: 9
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 15:25:59 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/display.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:28:29 on Oct 02,2024
+# vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/display.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity display
+# -- Compiling architecture arch_display_test of display
+# End time: 15:28:29 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.main_testbench
+# vsim work.main_testbench 
+# Start time: 15:28:32 on Oct 02,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.main_testbench(main)
+# Loading work.main_generated_source(bdf_type)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.system_core(behavioral)
+# Loading ieee.numeric_std(body)
+# Loading work.umidade_module(umidade_main)
+# Loading work.button_process(arch_button)
+# Loading work.display(arch_display_test)
+# Loading work.cronometro(main)
+# Loading work.minutes_second_module(arch_minutes_second)
+# Loading work.central_alarmes(main)
+# Loading work.altitude_module(arch_altitude)
+# Loading work.temp_module(main)
+add wave -position end  sim:/main_testbench/Balt
+add wave -position end  sim:/main_testbench/Bumid
+add wave -position end  sim:/main_testbench/Btemp
+add wave -position end  sim:/main_testbench/Btimer
+add wave -position end  sim:/main_testbench/Brestart
+add wave -position end  sim:/main_testbench/Bplay_pause
+add wave -position end  sim:/main_testbench/alt_in
+add wave -position end  sim:/main_testbench/umid_in
+add wave -position end  sim:/main_testbench/temp_in
+add wave -position end  sim:/main_testbench/clk
+add wave -position end  sim:/main_testbench/disp_milhares
+add wave -position end  sim:/main_testbench/disp_centenas
+add wave -position end  sim:/main_testbench/disp_dezenas
+add wave -position end  sim:/main_testbench/disp_unidades
+add wave -position end  sim:/main_testbench/LED_alarm
+add wave -position end  sim:/main_testbench/beauty_display
+add wave -position end  sim:/main_testbench/LED_estado
+run -all
+# ** Error: Falha com teste 0 : display=0024 LED_alarm='1'
+#    Time: 400 ns  Iteration: 0  Instance: /main_testbench
+# ** Error: Falha com teste 1 : display=0024 LED_alarm='1'
+#    Time: 800 ns  Iteration: 0  Instance: /main_testbench
+# ** Error: Falha com teste 2 : display=0024 LED_alarm='1'
+#    Time: 1200 ns  Iteration: 0  Instance: /main_testbench
+# ** Error: Falha com teste 3 : display=0024 LED_alarm='1'
+#    Time: 1600 ns  Iteration: 0  Instance: /main_testbench
+# ** Error: Falha com teste 4 : display=0024 LED_alarm='1'
+#    Time: 2 us  Iteration: 0  Instance: /main_testbench
+# ** Error: Falha com teste 5 : display=0024 LED_alarm='1'
+#    Time: 2400 ns  Iteration: 0  Instance: /main_testbench
+# ** Error: Falha com teste 6 : display=0024 LED_alarm='1'
+#    Time: 2800 ns  Iteration: 0  Instance: /main_testbench
+# ** Error: Falha com teste 7 : display=0024 LED_alarm='1'
+#    Time: 3200 ns  Iteration: 0  Instance: /main_testbench
+# ** Error: Falha com teste 8 : display=0024 LED_alarm='1'
+#    Time: 3600 ns  Iteration: 0  Instance: /main_testbench
+# ** Error: Falha com teste 9 : display=0024 LED_alarm='1'
+#    Time: 4 us  Iteration: 0  Instance: /main_testbench
+# ** Error: Falha com teste 10 : display=0024 LED_alarm='1'
+#    Time: 4400 ns  Iteration: 0  Instance: /main_testbench
+# ** Error: Falha com teste 11 : display=0024 LED_alarm='1'
+#    Time: 4800 ns  Iteration: 0  Instance: /main_testbench
+# ** Error: Falha com teste 12 : display=0024 LED_alarm='1'
+#    Time: 5200 ns  Iteration: 0  Instance: /main_testbench
+# ** Error: Falha com teste 13 : display=0024 LED_alarm='1'
+#    Time: 5600 ns  Iteration: 0  Instance: /main_testbench
+# ** Error: Falha com teste 15 : display=0024 LED_alarm='1'
+#    Time: 6400 ns  Iteration: 0  Instance: /main_testbench
+# ** Error: Falha com teste 16 : display=0012 LED_alarm='1'
+#    Time: 6800 ns  Iteration: 0  Instance: /main_testbench
+# ** Error: Falha com teste 17 : display=0012 LED_alarm='1'
+#    Time: 7200 ns  Iteration: 0  Instance: /main_testbench
+# ** Error: Falha com teste 18 : display=0012 LED_alarm='1'
+#    Time: 7600 ns  Iteration: 0  Instance: /main_testbench
+# ** Error: Falha com teste 19 : display=0012 LED_alarm='1'
+#    Time: 8 us  Iteration: 0  Instance: /main_testbench
+# ** Error: Falha com teste 20 : display=0024 LED_alarm='1'
+#    Time: 8400 ns  Iteration: 0  Instance: /main_testbench
+# ** Error: Falha com teste 21 : display=0024 LED_alarm='1'
+#    Time: 8800 ns  Iteration: 0  Instance: /main_testbench
+# ** Error: Falha com teste 22 : display=0024 LED_alarm='1'
+#    Time: 9200 ns  Iteration: 0  Instance: /main_testbench
+# ** Error: Falha com teste 23 : display=0024 LED_alarm='1'
+#    Time: 9600 ns  Iteration: 0  Instance: /main_testbench
+# ** Error: Falha com teste 24 : display=0024 LED_alarm='1'
+#    Time: 10 us  Iteration: 0  Instance: /main_testbench
+# ** Error: Falha com teste 25 : display=0024 LED_alarm='1'
+#    Time: 10400 ns  Iteration: 0  Instance: /main_testbench
+# ** Error: Falha com teste 26 : display=0024 LED_alarm='1'
+#    Time: 10800 ns  Iteration: 0  Instance: /main_testbench
+# ** Error: Falha com teste 27 : display=0024 LED_alarm='1'
+#    Time: 11200 ns  Iteration: 0  Instance: /main_testbench
+# ** Error: Falha com teste 28 : display=0024 LED_alarm='1'
+#    Time: 11600 ns  Iteration: 0  Instance: /main_testbench
+vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/altitude_module.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:31:17 on Oct 02,2024
+# vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/altitude_module.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity altitude_module
+# -- Compiling architecture arch_altitude of altitude_module
+# End time: 15:31:17 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/temp_module.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:31:17 on Oct 02,2024
+# vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/temp_module.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity temp_module
+# -- Compiling architecture main of temp_module
+# End time: 15:31:17 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.altitude_module(arch_altitude)
+# Loading work.temp_module(main)
+run -all
+# ** Error: Falha com teste 16 : display=0012 LED_alarm='1'
+#    Time: 6800 ns  Iteration: 0  Instance: /main_testbench
+# ** Error: Falha com teste 18 : display=0012 LED_alarm='1'
+#    Time: 7600 ns  Iteration: 0  Instance: /main_testbench
+vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/altitude_module.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:41:05 on Oct 02,2024
+# vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/altitude_module.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity altitude_module
+# -- Compiling architecture arch_altitude of altitude_module
+# End time: 15:41:05 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.altitude_module(arch_altitude)
+run -all
+# ** Error: Falha com teste 16 : display=0012 LED_alarm='1'
+#    Time: 6800 ns  Iteration: 0  Instance: /main_testbench
+# ** Error: Falha com teste 18 : display=0012 LED_alarm='1'
+#    Time: 7600 ns  Iteration: 0  Instance: /main_testbench
+vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/display.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:41:20 on Oct 02,2024
+# vcom -reportprogress 300 -work work /home/ceo/Downloads/projeto_final/display.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity display
+# -- Compiling architecture arch_display_test of display
+# End time: 15:41:20 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.display(arch_display_test)
+run -all
+# End time: 15:41:32 on Oct 02,2024, Elapsed time: 0:13:00
+# Errors: 0, Warnings: 0

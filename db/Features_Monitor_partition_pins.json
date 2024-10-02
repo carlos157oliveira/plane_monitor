@@ -1,0 +1,149 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "out_temp[0]",
+					"strict" : false
+				},
+				{
+					"name" : "out_temp[1]",
+					"strict" : false
+				},
+				{
+					"name" : "out_temp[2]",
+					"strict" : false
+				},
+				{
+					"name" : "out_temp[3]",
+					"strict" : false
+				},
+				{
+					"name" : "out_temp[4]",
+					"strict" : false
+				},
+				{
+					"name" : "out_temp[5]",
+					"strict" : false
+				},
+				{
+					"name" : "out_temp[6]",
+					"strict" : false
+				},
+				{
+					"name" : "out_temp[7]",
+					"strict" : false
+				},
+				{
+					"name" : "out_alt[0]",
+					"strict" : false
+				},
+				{
+					"name" : "out_alt[1]",
+					"strict" : false
+				},
+				{
+					"name" : "out_alt[2]",
+					"strict" : false
+				},
+				{
+					"name" : "out_alt[3]",
+					"strict" : false
+				},
+				{
+					"name" : "out_alt[4]",
+					"strict" : false
+				},
+				{
+					"name" : "out_alt[5]",
+					"strict" : false
+				},
+				{
+					"name" : "out_alt[6]",
+					"strict" : false
+				},
+				{
+					"name" : "out_alt[7]",
+					"strict" : false
+				},
+				{
+					"name" : "out_umi[0]",
+					"strict" : false
+				},
+				{
+					"name" : "out_umi[1]",
+					"strict" : false
+				},
+				{
+					"name" : "out_umi[2]",
+					"strict" : false
+				},
+				{
+					"name" : "out_umi[3]",
+					"strict" : false
+				},
+				{
+					"name" : "out_umi[4]",
+					"strict" : false
+				},
+				{
+					"name" : "out_umi[5]",
+					"strict" : false
+				},
+				{
+					"name" : "out_umi[6]",
+					"strict" : false
+				},
+				{
+					"name" : "out_umi[7]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[0]",
+					"strict" : false
+				},
+				{
+					"name" : "switches_sel[0]",
+					"strict" : false
+				},
+				{
+					"name" : "switches_sel[1]",
+					"strict" : false
+				},
+				{
+					"name" : "switches_sel[2]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[1]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[2]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[3]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[4]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[5]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[6]",
+					"strict" : false
+				},
+				{
+					"name" : "switches[7]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

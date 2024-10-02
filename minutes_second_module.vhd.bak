@@ -1,0 +1,36 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
+
+entity minutes_second_module is
+port(
+	second_input_value : in std_logic_vector (15 downto 0);
+	minute_second_output_value : out std_logic_vector (15 downto 0)
+);
+end minutes_second_module; 
+
+architecture arch_minutes_second of minutes_second_module is
+	-- Objetivo:
+	-- Receber um valor em segundos (16 bits)
+	-- Converter o valor para minutos (8 bits): segundos (8 bits) 
+	-- Exemplo: Recebe 120 segundos (0000000001111000) envia 02 minutos (00000010): 00 segundos (00000000)
+begin
+    process(second_input_value)
+	 variable total_seconds : integer;
+	 variable minutes : integer;
+	 variable seconds : integer;
+	 
+    begin
+        -- Converter o vetor de bits de entrada para inteiro unsigned
+        total_seconds := to_integer(unsigned(second_input_value));
+        
+        -- Calcular os minutos e os segundos
+        minutes := total_seconds / 60; -- Divisão para obter minutos
+        seconds := total_seconds mod 60; -- Resto da divisão para obter segundos
+
+        -- Concatenar minutos e segundos no formato desejado
+        minute_second_output_value <= std_logic_vector(to_unsigned(minutes, 8) & to_unsigned(seconds, 8));        
+    end process;
+end arch_minutes_second;
+

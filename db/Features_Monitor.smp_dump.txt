@@ -1,0 +1,6 @@
+
+State Machine - |cronometro|state
+Name state.pausado state.resetado state.contando 
+state.contando 0 0 0 
+state.resetado 0 1 1 
+state.pausado 1 0 1 

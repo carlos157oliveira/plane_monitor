@@ -1,0 +1,81 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity system_core is
+    Port (
+        sel       : in std_logic_vector(1 downto 0);   -- seletor de prioridade
+        in_timer  : in std_logic_vector(15 downto 0);  -- cronômetro
+        in_temp   : in std_logic_vector(7 downto 0);   -- temperatura
+        in_humid  : in std_logic_vector(7 downto 0);   -- umidade
+        in_alt    : in std_logic_vector(7 downto 0);   -- altitude
+        ctrl      : in std_logic_vector(3 downto 0);   -- vetor de controle 4 bits
+		  timer_neg : in std_logic;					  		 -- sinal +/- timer (sempre '0')
+		  temp_neg  : in std_logic;					  		 -- sinal +/- temperatura
+		  humid_neg : in std_logic;					  		 -- sinal +/- umidade (sempre '0')
+		  alt_neg   : in std_logic;					  		 -- sinal +/- altitude (sempre '0')
+        out_data  : out std_logic_vector(15 downto 0); -- saída para o display
+		  out_neg   : out std_logic							 -- saída de valor de sinal +/-
+    );
+end system_core;
+
+architecture Behavioral of system_core is
+    -- Definição dos estados
+    type state_type is (S_TIMER, S_TEMP, S_HUMID, S_ALT);
+    signal state : state_type := S_TIMER; -- Estado inicial definido como cronômetro
+    signal selected_input : std_logic_vector(15 downto 0);
+	 signal selected_neg : std_logic;
+	 constant const_zero : std_logic_vector(7 downto 0) := (others => '0');
+
+begin
+
+    -- Processo da máquina de estados, reagindo às mudanças de `ctrl`
+    process(ctrl)
+    begin
+        -- Verifica os bits do vetor de controle e muda o estado
+        case ctrl is
+            when "0001" =>
+                state <= S_TIMER;
+                selected_input <= in_timer;
+					 selected_neg <= timer_neg;
+            when "0010" =>
+                state <= S_TEMP;
+                selected_input <= const_zero & in_temp;
+					 selected_neg <= temp_neg;
+            when "0100" =>
+                state <= S_HUMID;
+                selected_input <= const_zero & in_humid;
+					 selected_neg <= humid_neg;
+            when "1000" =>
+                state <= S_ALT;
+                selected_input <= const_zero & in_alt;
+					 selected_neg <= alt_neg;
+            when others =>
+                state <= S_TIMER; -- Estado default
+        end case;
+    end process;
+
+    -- Processo de seleção de prioridade (sel) e atualização da saída
+    process(sel, selected_input, in_timer, in_temp, in_humid, in_alt)
+    begin
+        -- Se 'sel' for diferente de "00", ele tem prioridade e define a saída
+        case sel is
+            when "01" =>
+                out_data <= const_zero & in_temp;  -- Prioriza temperatura
+					 out_neg <= temp_neg;
+            when "10" =>
+                out_data <= const_zero & in_alt;   -- Prioriza altitude
+					 out_neg <= alt_neg;
+            when "11" =>
+                out_data <= const_zero & in_humid; -- Prioriza umidade
+					 out_neg <= humid_neg;
+            when others =>
+                -- Se 'sel' é "00", usa o valor selecionado pela máquina de estados
+                out_data <= sele
+					 cted_input;
+					 out_neg <= selected_neg;
+        end case;
+    end process;
+
+end Behavioral;

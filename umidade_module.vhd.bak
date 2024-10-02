@@ -1,0 +1,27 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity umidade_module is 
+	port(
+		umidade_in: in std_logic_vector(7 downto 0);
+		alarm_output, negative_output: out std_logic;
+		umidade_out: out std_logic_vector(7 downto 0)
+	);
+end umidade_module;
+
+architecture umidade_main of umidade_module is
+	signal umidade_int: integer range 0 to 100 := 0 ;
+begin
+	process(umidade_in) 
+	begin
+		umidade_int <= to_integer(unsigned(umidade_in));
+		if(umidade_int < 10 or umidade_int > 20) then
+			alarm_output <= '0'; -- Condição com alarme
+		else
+			alarm_output <= '1'; -- Condição sem alarme
+		end if;
+	end process;
+	umidade_out <= std_logic_vector(to_unsigned(umidade_int, umidade_out'length));
+	negative_output <= '1'; --Os valores de umidade são sempre positivas
+end umidade_main;
